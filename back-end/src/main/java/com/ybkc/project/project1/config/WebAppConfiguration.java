@@ -24,9 +24,4 @@ public class WebAppConfiguration implements WebMvcConfigurer {
             registry.addResourceHandler("/**").addResourceLocations(CLASSPATH_RESOURCE_LOCATIONS);
         }
     }
-
-    @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/admin").setViewName("forward:/index.html");
-    }
 }

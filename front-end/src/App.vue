@@ -17,7 +17,7 @@
             <v-list-tile-title>
               <router-link
                 to="/" class="menu_label">
-                Overview
+                Overview2
               </router-link>
             </v-list-tile-title>
           </v-list-tile-content>
@@ -30,7 +30,7 @@
             <v-list-tile-title>
               <router-link
                 to="/analysis" class="menu_label">
-                Analysis
+                Analysis2
               </router-link>
             </v-list-tile-title>
           </v-list-tile-content>

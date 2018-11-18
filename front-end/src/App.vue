@@ -14,7 +14,12 @@
             <v-icon>dashboard</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Overview</v-list-tile-title>
+            <v-list-tile-title>
+              <router-link
+                to="/" class="menu_label">
+                Overview
+              </router-link>
+            </v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile>
@@ -22,7 +27,12 @@
             <v-icon>equalizer</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Analysis</v-list-tile-title>
+            <v-list-tile-title>
+              <router-link
+                to="/analysis" class="menu_label">
+                Analysis
+              </router-link>
+            </v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -41,31 +51,7 @@
         <v-layout
           justify-center
           align-center>
-          <v-flex shrink>
-            <v-tooltip right>
-              <v-btn
-                slot="activator"
-                :href="source"
-                icon
-                large
-                target="_blank"
-              >
-                <v-icon large>code</v-icon>
-              </v-btn>
-              <span>Source</span>
-            </v-tooltip>
-            <v-tooltip right>
-              <v-btn
-                slot="activator"
-                icon
-                large
-                href="https://codepen.io/johnjleider/pen/qxQWda"
-                target="_blank">
-                <v-icon large>mdi-codepen</v-icon>
-              </v-btn>
-              <span>Codepen</span>
-            </v-tooltip>
-          </v-flex>
+          <router-view />
         </v-layout>
       </v-container>
     </v-content>
@@ -90,3 +76,10 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.menu_label {
+  text-decoration: none;
+  color: white;
+}
+</style>

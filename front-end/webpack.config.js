@@ -1,5 +1,5 @@
-var path = require('path')
-var webpack = require('webpack')
+var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
   entry: './src/main.js',
@@ -10,7 +10,7 @@ module.exports = {
   },
   module: {
     rules: [
-      {
+      /*{
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
         enforce: 'pre',
@@ -22,7 +22,7 @@ module.exports = {
           emitWarning: true,
           formatter: require('eslint-friendly-formatter')
         }
-      },
+      },*/
       {
         test: /\.css$/,
         use: [
